@@ -8,3 +8,45 @@ img[data-src] {
   height: 500px;
   width: 1000px;
 }
+img[src] {
+  /*opacity: 0;*/
+  height: 500px;
+  width: 1000px;
+}
+.b-lazy {
+      opacity:0;
+      transform: scale(3);
+      transition: all 500ms;
+   }
+   .b-loaded {
+      opacity:1;
+      transform: scale(1);
+   }
+
+   .b-lazy.animate{
+     opacity:0;
+     -ms-transform: scale(3);
+     -moz-transform: scale(3);
+     -webkit-transform: scale(3);
+     transform: scale(3);
+     -ms-transition: all 500ms;
+     -moz-transition: all 500ms;
+     -webkit-transition: all 500ms;
+     transition: all 500ms;
+   }
+   .b-loaded.animate {
+     opacity:1;
+     -ms-transform: scale(1);
+     -moz-transform: scale(1);
+     -webkit-transform: scale(1);
+     transform: scale(1);
+   }
+
+   .ratio{
+		  /*padding-bottom:66.64%;*/
+		  background-color: #1E1E1E;
+		  height: 500px;
+		  width: 1000px;
+		  overflow: hidden;
+		  position:relative;
+	  }
