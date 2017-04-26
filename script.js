@@ -7,6 +7,16 @@ window.addEventListener('load', function(){
     }
 
 var bLazy = new Blazy({
+});
+
+$(function(event) {
+  console.log('working');
+       $('img.lazy').lazyload({
+        //  event: 'click'
+         effect: "fadeIn",
+         effectTime: 10000,
+         threshold: 0
+       });
+  });
 
 });
-}, false)
